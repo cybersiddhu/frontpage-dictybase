@@ -1,0 +1,14 @@
+/* Custom page footer */
+
+body {
+padding-top: 100px;
+text-align: center;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+footer {
+    color: red;
+    padding-top: 1px;
+    border: 3px solid #e5e5e5;
+}
