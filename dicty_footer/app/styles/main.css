@@ -8,9 +8,8 @@ padding-right: 10px;
 }
 
 footer {
-    color: white;
     padding-top: 1px;
-    border: 3px solid #e5e5e5;
+    border: 3px solid #000066;
     font-size: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -26,13 +25,25 @@ footer {
 .col-sm-2 {
     text-align: center;
     padding-bottom: 20px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
 .footmenus {
-    font: bold 11px arial,sans-serif;
+    font: bold 12px arial,sans-serif;
     color: #CCFFCC;
+    padding-top: 5px;
 }
 
+.footMenuSupport {
+    font: bold 10px arial,sans-serif;
+    color: #FFFFFF;
+}
+
+.footLinks {
+	color: white;
+	font: 10px arial, sans-serif;
+	padding-top: 0px;
+    padding-bottom: -2px;
+}
