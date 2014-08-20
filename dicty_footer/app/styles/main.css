@@ -61,5 +61,10 @@ footer {
 .cimp{
     /*color:#00CCCC;*/
     text-shadow: 0px 0px 5px #FFFF66;
-
 }
+
+/*Footer Rollover effects*/
+a:link { color: white; text-decoration: none }
+a:active { color: yellow; text-decoration: none }
+a:visited { color: white; text-decoration: none }
+a:hover { color: blue; text-decoration: underline; background: #CCFFCC }
