@@ -47,3 +47,19 @@ footer {
 	padding-top: 0px;
     padding-bottom: -2px;
 }
+
+/*Colors for screen sizes*/
+.cmedium {
+    color: green;
+}
+.csmall {
+    color:orange;
+}
+.cextra {
+    color:red;
+}
+.cimp{
+    /*color:#00CCCC;*/
+    text-shadow: 0px 0px 5px #FFFF66;
+
+}
