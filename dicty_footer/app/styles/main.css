@@ -1,17 +1,17 @@
 /* Custom page footer */
 
 body {
-padding-top: 100px;
-text-align: center;
-padding-left: 10px;
-padding-right: 10px;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 footer {
-    border: 3px solid #000066;
+    border: 2px solid #000066;
     font-size: 10px;
-    padding-top: 0px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 200px;
 }
 
 .gradient_footer {
@@ -21,17 +21,22 @@ footer {
 	background: -moz-linear-gradient(#000099, #0099FF); /* Firefox 3.6 to 15 */
 }
 
+
+/*Setting up padding accoring to the size of the screen*/
+
 .col-xs-6{
-    text-align: center;
+    /*text-align: center;*/
     /*border: 1px solid black;*/
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
+
+
 .footmenus {
-    font: bold 12px arial,sans-serif;
+    font: 12px helvetica,arial,sans-serif;
     color: #CCFFCC;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 .footLinks {
@@ -42,7 +47,7 @@ footer {
 }
 
 .footMenuSupport {
-    font: bold 10px arial,sans-serif;
+    font: 12px arial,sans-serif;
     color: yellow;
     padding-top: 30px;
 }

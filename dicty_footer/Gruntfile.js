@@ -362,7 +362,7 @@ module.exports = function (grunt) {
         'autoprefixer',
         'concat',
         'cssmin',
-        'uglify',
+     //   'uglify',
         'copy:dist',
         'rev',
         'usemin',
