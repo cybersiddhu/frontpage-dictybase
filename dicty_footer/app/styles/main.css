@@ -16,9 +16,14 @@ footer {
 
 .gradient_footer {
 	background: linear-gradient(#000099, #0099FF); /* Standard syntax */
-	background: -webkit-linear-gradient(#000099, #0099FF); /* Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#000099, #0099FF); /* Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#000099, #0099FF); /* Firefox 3.6 to 15 */
+	background: -webkit-linear-gradient(#000099, #0099FF); */ /*Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
+
+    /*To test it out
+    /*background: linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;*/
+    /*background: -webkit-linear-gradient(rgba(0, 0, 153, 1), rgba(0, 153, 255, 1)) !important;*/
+    /*background: -webkit-linear-gradient(aqua, white);*/
 }
 
 
