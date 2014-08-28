@@ -1,17 +1,23 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="dictycatApp">
 <head>
   <meta charset="utf-8">
-  <title>Footer with AngularJS</title>
+  <title>dicty-Angular: the footer</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
-<body>
+<body ng-controller="DictyMenuListCtrl">
+  <h1> {{title}} </h1>
+  <h3> Main menu </h3>
+  <ul>
+    <li ng-repeat="menu in sections">
+      {{menu.name}}
+      <p>{{menu.snippet}}</p>
+    </li>
+  </ul>
 
-  <h1> Footer with AngularJS </h1>
-  <h4>The dicty footer is coming {{'soon' + '!'}}</h4>
-  <p>1 + 2 = {{1+2}}</p>
-
+  <p>Total number of sections: {{sections.length}}</p>
 </body>
 </html>
