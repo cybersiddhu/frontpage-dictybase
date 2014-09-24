@@ -1,4 +1,10 @@
 /* Custom page footer */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
 body {
     text-align: center;
@@ -34,10 +40,8 @@ footer {
 /*Setting up padding accoring to the size of the screen*/
 
 .footmenus {
-    
     font: 16px helvetica,arial,sans-serif;
     color: #CCFFCC;
-
 }
 
 .footLinks {
