@@ -9,7 +9,7 @@ describe('dictyFooter controllers', function () {
       var number = 6;
       it('should create the list of main menu with '+number+' elements', inject(function($controller) {
         var scope ={},
-        ctrl = $controller('dictyFooterList', {$scope:scope} );
+        ctrl = $controller('dictyFooterCtrl', {$scope:scope} );
         expect(scope.sections.length).toBe(number);
       }));
   });
