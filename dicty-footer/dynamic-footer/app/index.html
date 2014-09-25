@@ -30,134 +30,45 @@
       <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
   </div>
 
+<h3> Full dynamic version </h3>
 
-    <!-- Just for visualization purposes -->
-        <div class="visible-lg">
-              ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ f o o t e r  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-        </div>
-        <div class="visible-md">
-             ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~f o o t e r ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-        </div>
-        <div class="visible-sm">
-             ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~f o o t e r ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-        </div>
+<!-- FOOTER -->
+<footer class="gradient_footer" class="sections">
 
-        <div class="visible-xs">
-            ~ ~ ~ ~ ~ ~ ~ f o o t e r ~ ~ ~ ~ ~ ~ ~
-        </div>
+        <div class="container">
 
-        <h1> The static footer </h1>
-        <!-- FOOTER -->
-        <footer class="gradient_footer">
+            <div class="row">
 
-                <div class="container">
+                <div class="col-md-10 col-xs-12">
 
+                    <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="menu in sections">
+                        <span class="footmenus"> {{menu.main}} </span>
+                        <dt ng-repeat="(submenu, link) in menu.submain" class= "listMenus"><a href="{{link}}" class="footLinks"> {{submenu}}</a></dt>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="row">
+                        <dt class="footMenuSupport"> Please CITE: </dt>
+                        <dt class= "listMenus"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23172289" class="footLinks">dictyBase</a></dt>
+                        <dt class= "listMenus"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23494302" class="footLinks">Dicty Stock Center</a></dt>
+                    </div>
                     <div class="row">
+                        <dt class="footMenuSupport"> Supported by </dt>
+                        <dt class= "listMenus"><a href="#" class="footLinks"> NIH </a></dt>
+                        <dt class= "listMenus"><a href="#" class="footLinks"> GMOD </a></dt>
+                        <dt class= "listMenus"><a href="#" class="footLinks"> Gene Ontology </a></dt>
+                    </div>
+                </div>
 
-                        <div class="col-md-10 col-xs-12">
+            </div> <!-- Row of main menus -->
 
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <span class="footmenus"> Genomes </span>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> <i>D. discoideum</i> </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> <i>D. fasciculatum</i> </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> <i>D. purpureum</i> </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> <i>P. pallidum </i> </a></dt>
-                            </div>
+        </div> <!-- <div class="container"> -->
+            
+    <!-- </div> <div class="footer"> -->
+</footer>
 
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <span class="footmenus"> Tools</span>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> DictyMine </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Signaling Pathways </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Genome Browser </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> BLAST </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> ID Converter </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> dictyMart </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Textpresso </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Biochemical Pathways </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Third Party Tools </a></dt>
-                            </div>
-
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <span class="footmenus"> DictyAccess </span>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Genome Eye View </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Genomic statistics </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Annotations </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Ontology </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Phylogeny </a></dt>
-                                <br> <br> <br> <br>
-                            </div>
-
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <span class="footmenus"> Stock Center</span>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Home </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> About SC </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Search SC </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Order </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Deposit </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Strain Catalog </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Plasmid Catalog </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Additional Materials </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> SC FAQ </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Other SC </a></dt>
-                            </div>
-
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <span class="footmenus"> Research</span>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Learn about Dicty </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Teaching Protocols </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Techniques </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Anatomy Ontology </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Mutant Phenotypes </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> HTP Phenotyping at Princeton </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Codon Bias Table </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Nomenclature Guidelines </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Axenic Strains History </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Franke Dicty Reference Library </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Genome Resources </a></dt>
-                            </div>
-
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <span class="footmenus"> Community </span>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Submit an Abstract </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Dicty News </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Listserv Archive </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Colleagues profiles </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Dicty Anual Conference </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Job Opportunities </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> History </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> DictyLabs web </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Pictures/Videos </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> dictyArt </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Useful Links </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Virtual Library </a></dt>
-                            </div> 
-                            <!-- Last DIV of of main menus -->
-                        </div> 
-                        <div class="col-md-2">
-                          <div class="row">
-                                <dt class="footMenuSupport"> Please CITE: </dt>
-                                <dt class= "listMenus"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23172289" class="footLinks">dictyBase</a></dt>
-                                <dt class= "listMenus"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23494302" class="footLinks">Dicty Stock Center</a></dt>
-                            </div>
-                            <div class="row">
-                                <dt class="footMenuSupport"> Supported by </dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> NIH </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> GMOD </a></dt>
-                                <dt class= "listMenus"><a href="#" class="footLinks"> Gene Ontology </a></dt>
-                            </div>
-                        </div>
-
-                    </div> <!-- Row of main menus -->
-
-                </div> <!-- <div class="container"> -->
-                    
-            <!-- </div> <div class="footer"> -->
-
-        </footer>
-
-
-
-
+<br/><br/><br/>
   <h1> {{title}} </h1>
   <h3> Main menu (<i>dynamically generated</i>)</h3>
 

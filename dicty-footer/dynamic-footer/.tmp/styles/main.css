@@ -1,6 +1,13 @@
 /* app css stylesheet */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
 body {
+    text-align: center;
     padding-top: 2px;
     padding-left: 5px;
     padding-right: 5px;
