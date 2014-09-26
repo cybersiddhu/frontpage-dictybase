@@ -20,12 +20,12 @@ The size of the framework hosting the content will be limited to a maximum of wi
 - More control on how the user experience the web.
 - Easy to read (avoiding long sentences).
 
-![LimitSize](https://github.com/dictyBase/frontpage-dictybase/blob/master/images/newDictyLimitingSize.jpg)
+![LimitSize](https://github.com/dictyBase/frontpage-dictybase/blob/feature/footer/images/newDictyLimitingSize.jpg)
 
 ### Frontpage layout
 This is how the main sections will be organized in the front page:
 
-![LimitSize](https://github.com/dictyBase/frontpage-dictybase/blob/master/images/newDictyFrontpageLayout.jpg)
+![FrontpageLayout](https://github.com/dictyBase/frontpage-dictybase/blob/feature/footer/images/newDictyFrontpageLayout.jpg)
 
 ### Frontpage mockup
 This is the initial design that we plan to accomplish. It will evolve as technology is implemented and as consequence of rounds of interactions.
@@ -41,4 +41,4 @@ The basic scaffold is pre-specified and independent of the number of sections. I
 ## Static pages
 General layout for static pages:
 
-![Dicty Mockup](https://github.com/dictyBase/frontpage-dictybase/blob/master/images/newDictyStatic.jpg)
+![Dicty Mockup](https://github.com/dictyBase/frontpage-dictybase/blob/feature/footer/images/newDictyStatic.jpg)
