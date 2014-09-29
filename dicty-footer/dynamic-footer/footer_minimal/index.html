@@ -4,21 +4,30 @@
   <meta charset="utf-8">
   <title>dicty-Angular: the footer</title>
   <meta name="description" content="David AngularJS testing platform">
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-</head>
-<body ng-controller="dictyFooterCtrl">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Main central section -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Angular link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="scripts/app.js"></script>
+
+  <!-- Use the RESTful functionality provided by Angular in the ngResource module, which is distributed separately from the core Angular framework. -->
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+</head>
+
+
+<body ng-controller="dictyFooterCtrl">
   <div class="main">
       <h3 class="visible-lg"> This is the <strong>LARGEST</strong> size! </h3>
       <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
@@ -31,16 +40,17 @@
   </div>
 
 <h3> Full dynamic version </h3>
+<h4> Quick Angular test: 4 + 3 = {{4+3}}</h4>
 
 <!-- FOOTER -->
 <!-- ANGULAR -->
-<footer class="gradient_footer">  <!-- class="sections" -->
+<footer class="gradient_footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-xs-12">
-                    <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="menu in sections">
+                    <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="menu in sections.menus">
                         <span class="footmenus"> {{menu.main}} </span>
-                        <dt ng-repeat="(submenu, link) in menu.submain" class= "listMenus"><a href="{{link}}" class="footLinks"> {{submenu}}</a></dt>
+                        <dt ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}" class="footLinks"> {{submenu}}</a></dt>
                     </div>
                 </div>
 <!-- ANGULAR ENDS -->
@@ -67,53 +77,16 @@
 </footer>
 
 <br/><br/><br/>
-  <h1> {{title}} </h1>
-  <h3> Main menu (<i>dynamically generated</i>)</h3>
 
-<br/>
-    <h4> Last improvement... </h4>
-    <ul>
-        <li> The list of menus, submenus and links are now in a <em>json</em> file </li>
-        <li> The full menu (with the links) are dinamically generated from the json file</li>
-    </ul>  
-</br>
-
-  <ul class="sections">
-    <li ng-repeat="menu in sections">
+<h4> Testing the scope </h4>
+  <ul> 
+    <li ng-repeat="menu in sections.menus">
       <h4>{{menu.main}}</h4>
         <dt ng-repeat="(submenu, link) in menu.submain"><a href="{{link}}"> {{submenu}} </a></dt>
     </li>
   </ul>
 
-  <p>Total number of sections: {{sections.length}}</p>
-
-  <!-- Scripts and configurations -->
-    
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/dictyFooterController.js"></script>
-    <!-- endbuild -->
+  <p>Total number of sections: {{sections.menus.length}}</p>
 
 </body>
 </html>
