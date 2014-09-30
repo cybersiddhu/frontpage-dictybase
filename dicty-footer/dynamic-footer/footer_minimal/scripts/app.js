@@ -109,10 +109,7 @@
     dictyFooter.directive('firstDirective', function (){
         return{
             restrict: 'E',
-            template: "A first working directive"
+            template: "<h3><strong>Test: This is a directive</strong></h3>"
         }
     });
-
-
-
 })();

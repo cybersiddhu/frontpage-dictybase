@@ -5,7 +5,7 @@
   <title>dicty-Angular: the footer</title>
   <meta name="description" content="David AngularJS testing platform">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
 
   <link rel="stylesheet" href="styles/main.css">
   
@@ -28,24 +28,28 @@
 
 
 <body ng-controller="dictyFooterCtrl">
+  <h1>Angular dictyBase: the Footer</h1>
+  <hr>
+  <h3> Dynamic version of the footer </h3>
+  <hr>
   <div class="main">
-      <h3 class="visible-lg"> This is the <strong>LARGEST</strong> size! </h3>
+      <h3 class="visible-lg"> This is the <strong>LARGEST</strong> size screen! </h3>
       <h5 class="visible-lg"> Large devices (<strong class="cimp">large desktops</strong>, 1200px and up) </h5>
-      <h3 class="visible-md cmedium"> Welcome to <strong>MEDIUM</strong> size! </h3>
+      <h3 class="visible-md cmedium"> Welcome to <strong>MEDIUM</strong> size screen! </h3>
       <h5 class="visible-md"> Medium devices (<strong class="cimp">desktops</strong>, 992px and up) </h5>
       <h3 class="visible-sm csmall"> Switch to <strong>SMALL</strong> size! </h3>
       <h5 class="visible-sm"> Small devices (<strong class="cimp">tablets</strong>, 768px and up) </h5>
       <h3 class="visible-xs cextra"> <strong>EXTRA SMALL</strong> size!</h3>
       <h5 class="visible-xs"> Extra small devices (<strong class="cimp">phones</strong>, less than 768px) </h5>
   </div>
-
-<h3> Full dynamic version </h3>
-<h4> Quick Angular test: 4 + 3 = {{4+3}}</h4>
-
-<h5> And here it should go my first directive</h5>
-
-<first-directive> </first-directive>
-
+  <hr>
+  
+  <h4> Quick Angular tests</h4
+  <p>1) 4 + 3 = {{4+3}}</p>
+  <p>2) Second test, a directive:</p>
+  <first-directive> </first-directive>
+  <hr>
+  <h4> Test: Footer dynamically generated with Angular controller</h4>
 <!-- FOOTER -->
 <!-- ANGULAR -->
 <footer class="gradient_footer">
