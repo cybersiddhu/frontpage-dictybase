@@ -12,11 +12,17 @@
 
 (function(){
 
-    var dictyFooter = angular.module('dictyFooterApp', []);
+    var dictyApp = angular.module('dictyFooterApp', []);
 
-    dictyFooter.controller('dictyFooterCtrl', ['$scope', function ($scope) {
+    dictyApp.controller('dictyFooterCtrl', function(){
+        this.whatevers = thelinks;
+    });
+
+    dictyApp.controller('dictyFooterCtrl', ['$scope', function ($scope) {
 
     	$scope.sections = {};
+
+        $scope.sections.menus = this;
 
     	$scope.sections.menus = [
         {
@@ -106,10 +112,19 @@
 
     }]);
 
-    dictyFooter.directive('firstDirective', function (){
+    dictyApp.directive('firstDirective', function(){
         return{
             restrict: 'E',
-            template: "<h3><strong>Test: This is a directive</strong></h3>"
-        }
+            template: "<h3><strong>Yep: this is a directive</strong></h3>"
+        };
     });
+
+    dictyApp.directive('dictyFooter', function(){
+        return{
+            restrict:'EA',
+            templateUrl:"templates/dicty-footer.html"
+        };
+    });
+
 })();
+

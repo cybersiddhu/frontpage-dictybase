@@ -19,6 +19,12 @@ footer {
     padding-bottom: 10px;
 }
 
+.theDirective {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
 .gradient_footer {
     background: linear-gradient(#000099, #0099FF); /* Standard syntax */
     background: -webkit-linear-gradient(#000099, #0099FF); */ /*Safari 5.1 to 6.0 */
@@ -38,7 +44,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 
 /*Setting up padding accoring to the size of the screen*/
 
