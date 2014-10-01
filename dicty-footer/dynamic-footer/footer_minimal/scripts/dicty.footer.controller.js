@@ -1,25 +1,19 @@
 /**
- * @ngdoc overview
- * @name dictyFooterApp
- * @description
- * # angularjsFooterDevApp  
- *
- * Main module of the application.
+ dicty.footer.controller.js
+ ----------------
+ dictyFooterCtrl
  */
 
-
-(function(){
-
+(function () {
     'use strict';
 
-    angular.module('dictyFooterApp', []);
-
-    angular.module('dictyFooterApp').controller('dictyFooterCtrl', dictyFooterCtrl);
+    angular
+        .module('dictyFooterApp')
+        .controller('dictyFooterCtrl', dictyFooterCtrl);
 
     function dictyFooterCtrl($scope) {
         $scope.title = 'Dynamic Footer (this is dynamic itself)';
         $scope.sections = {};
-
         $scope.sections.menus = [
             {
                 "main": "Genomes", 
@@ -104,23 +98,5 @@
             }
         ];
     };
-
-    angular
-        .module('dictyFooterApp')
-        .directive('firstDirective', function(){
-            return{
-                restrict: 'E',
-                template: "<h3><strong>Yep: this is a directive</strong></h3>"
-        };
-    });
-
-    angular
-        .module('dictyFooterApp')
-        .directive('dictyFooter', function(){
-            return{
-                restrict:'EA',
-                templateUrl:"templates/dicty-footer.html"
-        };
-    });
 
 })();
