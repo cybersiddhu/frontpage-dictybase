@@ -1,8 +1,10 @@
 /**
  dictyFooter.directive.js
  ----------------
- dictyFooterCtrl
- */
+
+The directive of the footer
+
+*/
 
 angular
     .module('dictyFooterApp')
@@ -10,7 +12,7 @@ angular
 
     function dictyFooter () {
             return{
-                restrict:'EA',
+                restrict:'E',
                 templateUrl:"templates/dicty-footer.html"
             };
     }

@@ -1,7 +1,8 @@
 /**
  Archive file
  
- The first app.js file that worked on the construction of the dicty-footer directive
+ The first app.js file that worked on the construction 
+ of the dicty-footer directive
 
  Insert into index.html: 
  <script type="text/javascript" src="scripts/app.js"></script>
