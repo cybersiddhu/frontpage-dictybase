@@ -1,0 +1,1 @@
+"use strict";var phonecatApp=angular.module("dictyFooterApp",[]);phonecatApp.controller("dictyFooterCtrl",["$scope","$http",function(a,b){b.get("links.json").success(function(b){a.sections=b}),a.title="Dynamic Footer"}]);
