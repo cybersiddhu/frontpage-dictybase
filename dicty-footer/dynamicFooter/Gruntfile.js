@@ -33,13 +33,30 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['wiredep']
       },
-      js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        }
-      },
+
+
+      // DJM COMMENT:
+      // I desactivate jshint because it is giving an error that does not make sense.
+      // Jshint might be excellent for javascript, but it does not seem to help with
+      // Angular. For example, when defining a controller:
+      //     angular
+      //     .module('dictyFooterApp')
+      //     .controller('dictyFooterCtrl', dictyFooterController);
+      //     
+      // and then the function... dictyFooterController()
+      // which is pretty standard, jshint understand this as a problem, 
+      // and complains in the following way:
+      // 
+      // 'dictyFooterController' was used before it was defined.
+      // 
+      // DJM CONCLUSION: it looks like jshint is excellent for does not understand Angular
+      // js: {
+      //   files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+      //   tasks: ['newer:jshint:all'],
+      //   options: {
+      //     livereload: '<%= connect.options.livereload %>'
+      //   }
+      // },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']

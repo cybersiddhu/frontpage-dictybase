@@ -15,9 +15,24 @@ These are interesting readings about Angular:
 ## Scaffolding the project
 
 * `generator-angular`: Yeoman scaffold to develop and test AngularJS. It has its problems
-* `angular-seed`:
+* `angular-seed`: This is an official alternative that we should keep in mind.
 
 
+## Style Guides:
+
+* Main by [John Papa](https://github.com/johnpapa/angularjs-styleguide)
+* Close alternative by [Todd Motto](https://github.com/toddmotto/angularjs-styleguide)
+
+
+## Unit testing
+
+* Library for testing [Jasmine](http://jasmine.github.io/)
+* Test runner: [karma](http://karma-runner.github.io/0.12/index.html)
+
+
+## Tips
+
+* [JShint](http://www.jshint.com/) to detect errors in javascript code
 
 
 
