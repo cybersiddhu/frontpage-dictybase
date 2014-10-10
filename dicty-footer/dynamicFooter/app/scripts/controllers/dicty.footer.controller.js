@@ -8,6 +8,12 @@
 (function () {
     'use strict';
 
+    /**
+     * The controller
+     * @param  {[type]} $scope 
+     * @param  {[type]} $http  The http service. 
+     * It gets the data from the json file at the momment.
+     */
     function dictyFooterController($scope, $http) {
         $scope.title = 'Dynamic Footer (this is dynamic itself)';
         $scope.sections = {};
@@ -15,18 +21,8 @@
             $scope.sections.menus = data;
         });
     }
-    
+
     angular
         .module('dictyFooterApp')
         .controller('dictyFooterCtrl', dictyFooterController);
-
-/**
- * The controller
- * @param  {[type]} $scope 
- * @param  {[type]} $http  The http service. It gets the data from the json file
- */
-
-
-
-
 })();
