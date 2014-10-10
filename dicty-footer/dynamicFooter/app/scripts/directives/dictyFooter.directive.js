@@ -4,16 +4,14 @@
  * The directive of the footer
 */
 
+
+(function () {
 'use strict';
 
-angular
-    .module('dictyFooterApp')
-    .directive('dictyFooter', dictyFooterMatter);
-
-/**
- * [dictyFooter is the <dicty-footer> directive]
- * @return {dicty-footer.html template} It contains the basic scaffold of the application
- */
+	/**
+	 * [dictyFooter is the <dicty-footer> directive]
+	 * @return {dicty-footer.html template}
+	 */
 
     function dictyFooterMatter () {
             return{
@@ -21,3 +19,9 @@ angular
                 templateUrl:'templates/dicty-footer.html'
             };
     }
+
+	angular
+	    .module('dictyFooterApp')
+	    .directive('dictyFooter', dictyFooterMatter);
+
+})();
