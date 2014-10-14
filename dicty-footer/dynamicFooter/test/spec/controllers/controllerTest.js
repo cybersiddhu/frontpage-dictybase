@@ -19,33 +19,81 @@ describe('Testing the controller: dictyFooterCtrl', function() {
 
   it('should access the title',
   function(){
+    // var num = 6;
     expect(scope.title).toEqual('Dynamic Footer (this is dynamic itself)');
+    expect(scope.sections.menus).not.toBeNull();
   });
 
 });
 
+describe('A very simple test', function() {
+  var a;
 
-// describe("Unit Testing Basic Stuff", function() {
+  it('This is the test', function() {
+    a = true;
 
-//   beforeEach(angular.mock.module('dictyFooterApp'));
+    expect(a).toBe(true);
+  });
+});
 
-//   it('should have a LoginCtrl controller', function() {
-//     expect(dictyFooterApp.dictyFooterCtrl).toBeDefined();
-//   });
+// Writing it in a different way
+describe ('Footer Controller, simple test', function() {
 
+  //Define the items that will be exposed in beforeEach
+  var controller, scope;
+
+  // The setup that needs to be defined for each test
+  beforeEach(module('dictyFooterApp'));
+
+  beforeEach(inject(function($controller, $rootScope) {
+       scope = $rootScope.$new();
+       controller = $controller('dictyFooterCtrl', {
+            $scope: scope
+       });
+  }));
+});
+
+
+// describe('Footer Controller, more complex', function() {
+//     var scope, createController, httpBackend;
+//      beforeEach(module('dictyFooterApp'));
+
+//     beforeEach(inject(function($controller, $rootScope, $httpBackend) {
+//         scope = $rootScope.$new();
+//         httpBackend = $httpBackend;
+        
+//         createController = function() {
+//             return $controller('dictyFooterCtrl', {
+//                 $scope: scope,
+//                 $http: $httpBackend
+//             });
+//         };
+//     }));
+    
+//     it('sets correct initial values', function() {
+//         httpBackend.expectGET('templates/links.json');
+//         createController();
+//         httpBackend.flush();
+//     });
 // });
 
+
+
+
+
+// The working test when everything was loaded in the controller:
+// 
 // describe('dictyFooter controllers', function () {
 
-//   describe('dictyFooterList', function() {
-
+//   describe('dictyFooterController', function() {
 //     // load the controller's module
 //     beforeEach(module('dictyFooterApp'));
-//       var number = 6;
-//       it('should create the list of main menu with '+number+' elements', inject(function($controller) {
-//         var scope ={},
-//         ctrl = $controller('dictyFooterCtrl', {$scope:scope} );
-//         expect(scope.sections.length).toBe(number);
+
+//       it('should create the list of main menu with 6 elements', inject(function($controller) {
+//         var scope ={};
+//         var ctrl;
+//         ctrl = $controller('dictyFooterController', {$scope:scope} );
+//         expect(scope.sections.length).toBe(6);
 //       }));
 //   });
 // });
