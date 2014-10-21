@@ -6,6 +6,7 @@ describe('First clean test', function() {
   });
 });
 
+
 describe('Testing the controller: dictyFooterCtrl', function() {
   // Load the main module
   beforeEach(module('dictyFooterApp'));
@@ -26,15 +27,6 @@ describe('Testing the controller: dictyFooterCtrl', function() {
 
 });
 
-describe('A very simple test', function() {
-  var a;
-
-  it('This is the test', function() {
-    a = true;
-
-    expect(a).toBe(true);
-  });
-});
 
 // Writing it in a different way
 describe ('Footer Controller, simple test', function() {
@@ -52,48 +44,3 @@ describe ('Footer Controller, simple test', function() {
        });
   }));
 });
-
-
-// describe('Footer Controller, more complex', function() {
-//     var scope, createController, httpBackend;
-//      beforeEach(module('dictyFooterApp'));
-
-//     beforeEach(inject(function($controller, $rootScope, $httpBackend) {
-//         scope = $rootScope.$new();
-//         httpBackend = $httpBackend;
-        
-//         createController = function() {
-//             return $controller('dictyFooterCtrl', {
-//                 $scope: scope,
-//                 $http: $httpBackend
-//             });
-//         };
-//     }));
-    
-//     it('sets correct initial values', function() {
-//         httpBackend.expectGET('templates/links.json');
-//         createController();
-//         httpBackend.flush();
-//     });
-// });
-
-
-
-
-
-// The working test when everything was loaded in the controller:
-// 
-// describe('dictyFooter controllers', function () {
-
-//   describe('dictyFooterController', function() {
-//     // load the controller's module
-//     beforeEach(module('dictyFooterApp'));
-
-//       it('should create the list of main menu with 6 elements', inject(function($controller) {
-//         var scope ={};
-//         var ctrl;
-//         ctrl = $controller('dictyFooterController', {$scope:scope} );
-//         expect(scope.sections.length).toBe(6);
-//       }));
-//   });
-// });
