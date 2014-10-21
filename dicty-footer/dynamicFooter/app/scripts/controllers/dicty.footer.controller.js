@@ -17,9 +17,13 @@
     function dictyFooterController($scope, $http) {
         $scope.title = 'Dynamic Footer (this is dynamic itself)';
         $scope.sections = {};
-        $http.get('templates/links.json').success(function(data) {
-            $scope.sections.menus = data;
-        });
+        $http.get('templates/links.json')
+            .success(function(data) {
+                $scope.sections.menus = data;
+            })
+            .error(function() {
+                $scope.sections.menus = {};
+            }); 
     }
 
     angular
