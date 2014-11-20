@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'dictyHeaderFooterApp'
   ])
   .config(function ($routeProvider) {
     $routeProvider
