@@ -3,7 +3,7 @@
 .dictyHeader {
     min-width: 320px;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
 }
 
 .dictyHeader > .container {
