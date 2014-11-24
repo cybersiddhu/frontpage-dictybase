@@ -1,62 +1,29 @@
-.frontpage {
-  text-align: center;
-  padding-bottom: 1px;
-}
-
-.imageSpace {
-  background-color: black;
-  height: 300px;
-  color: white;
-}
-
-.paperSpace {
-  background-color: lightblue;
-  height: 300px;
-}
-
-.newsSpace {
-  background-color: lightpink;
-  height: 200px;
-}
-
-.widgetSpace {
-  background-color: orange;
-  height: 400px;
-}
-
-.variableSpace {
-  text-align: center;
-  background-color: yellow;
-  height: 400px;
-}
-
-
-
-
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 1000px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-}
-
-/*TEMPORAL CODE (to delete eventually)*/
-/* Main marketing message and sign up button */
+/*TEMPORAL STYLE (to delete eventually)*/
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+}
+
+.contact {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.technical {
+	padding-left: 100px;
+	padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+	.technical {
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 5px;
+	}
 }

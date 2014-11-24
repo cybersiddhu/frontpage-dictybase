@@ -310,7 +310,8 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'fonts/*',
             //DJM
-            'scripts/dictyHF/*'
+            'scripts/dictyHF/*',
+            'styles/mainFrontpage.css'
           ]
         }, {
           expand: true,
